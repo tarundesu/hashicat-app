@@ -198,7 +198,7 @@ resource "aws_key_pair" "hashicat" {
   public_key = tls_private_key.hashicat.public_key_openssh
 }
 module "s3_bucket" {
-  source              = "app.terraform.io/upstreamworks/s3-bucket/aws"
+  source              = "app.terraform.io/tarundesu/s3-bucket/aws"
   version             = "3.1.0"
   s3_object_ownership = "BucketOwnerEnforced"
 }
